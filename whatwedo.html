@@ -26,17 +26,26 @@
     <div class = "flex py-1 px-4 bg-blue-800">
     </div>
 
-    <h3>Our Services</h3>
+    <div class = mx-4 space-y-4>
+
+    <h2 class ="mt-2 text-lg font-bold">
+        Our Services
+    </h2>
     
-    <p>
+    <div class="md:flex p-2">
+        <div class="w-1/3 p-2">
+    <p class ="py-4">
         <img src="moneybags.jpg"
         width="325"
-        height="218"><br><br>
+        height="218">
+        </div>
+
+        <div class="w-1/3 p-2 space-y-6">
         Here are some of the things that we do:
     </p>
 
-    <table>
-        <tr>
+    <table class ="table-auto border-separate border-black">
+        <tr class="bg-gray-300">
             <th>Service</th>
             <th>Price</th>
         </tr>
@@ -53,12 +62,20 @@
             <td>$10</td>
         </tr>
     </table>
-    <p>
-        Questions? <a href="mailto:fakeemail@gmail.com">Send us an inquiry.</a>
+    <p class = "space-y-6">
+        Questions? <span class = "underline text-blue-500"> 
+        <a href="mailto:fakeemail@gmail.com">Send us an inquiry.</a>
+    </span>
     </p>
-    
-    <p>
-        Take me back to the <a href="index.html">home page</a>.
-    </p>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="mx-4 relative h-32 w-128">
+        <div class="absolute inset-x-0 bottom-0 h-16 underline text-blue-500">
+            <a href="index.html">Back to Home Page</a>
+        </div>
+    </div>
 </body>
 </html>
