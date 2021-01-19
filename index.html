@@ -4,39 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LF CONSULTING SERVICES, LLP</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <h1>Hi! Welcome to the website for LF Consulting Services.</h1>
-    
-    <img src="synergy.jpg"
-        width="200"
-        height="200">
-    <h3>Our History</h3>
-    
-    <p>
-        LF Consulting Services was founded in 2021 in response to a local business school assignment. That is pretty much it.
-    </p>
-    
-    <h3>About Us</h3>
-    <p>
-        LF Consulting Services provides digital consulting and advisory services for local <strike>schmucks</strike> clients.
-    </p>
+    <div class = "md:flex py-2 px-4 text-l bg-gray-900 font-serif">
+    <h1 class="w-1/5 text-white font-bold">
+        <a href="index.html">LF CONSULTING SERVICES, LLP.</a>
+    </h1>
+        <p class="w-1/5 text-center text-white">
+        <a href="aboutus.html">About Us</a>
+        <p class="w-1/5 text-center text-white">
+        <a href="ourteam.html">Our Team</a>
+        </p>
+        <p class="w-1/5 text-center text-white">
+        <a href="whatwedo.html">What We Do</a>
+        </p>
+        <p class="w-1/5 text-center text-white">
+            <a href="mailto:donotemail@gmail.com">Contact Us</a>
+        </p>    
+    </div>
+    <div class = "flex py-1 px-4 bg-blue-800">
+    </div>
 
-    <p>
-        Meet our <a href="ourteam.html">leadership team</a>.
-    </p>
+    <div class="md:flex items-center">
+        <div class="w-1/4 p-4">
+        <img src="synergy.jpg"
+        width="250"
+        height="250">
+        </div>
+        <div class="w-1/4 p-4">
+        <img src="meme.jpg"
+        width="250"
+        height="250">
+        </div>
+        <div class="w-1/4 p-4">
+        <img src="project.jpg"
+        width="250"
+        height="250">
+        </div>
+        <div class="w-1/4 p-4">
+        <img src="charging.png"
+        width="250"
+        height="250">
+        </div>
+    </div>
 
-    <p>
-        Learn about <a href="whatwedo.html">what we do</a>.
-    </p>
+    <div class="m-4">
+        <h1 class="text-l">
+            <span class = "font-bold">Welcome to LF Consulting Services!</span>
+            <span>Learn more about us by clicking any of the links in the banner above.</span>
+        </h1>
+    ​
+        <h1 class="text-l">
+            <span class = "font-bold">Are you a prospective client?</span>
+            <span>Fill out the inquiry form below:</span>
+        </h1>
+        <form netlify class="mt-8 w-64">
+            <label class="block mt-4 font-bold" for="name">What is your name?</label>
+            <input class="p-2 w-64 border border-gray-900 rounded focus:outline-none 
+            focus:ring-gray-500 focus:border-gray-500" type="text" id="name" name="name">
+    
+            <label class="block mt-4 font-bold" for="email">What is your email?</label>
+            <input class="p-2 w-64 border border-gray-900 rounded focus:outline-none 
+            focus:ring-gray-500 focus:border-gray-500" type="email" id="email" name="email">
+    
+            <label class="block mt-4 font-bold" for="telno">What is your phone number?</label>
+            <input class="p-2 w-64 border border-gray-900 rounded focus:outline-none 
+            focus:ring-gray-500 focus:border-gray-500" type="tel" id="telno" name="telno">
 
-    <p>
-    Check out some of our noteworthy clients:
-    <ul>
-    <li>A young, scrappy consulting firm: <a href="http://mckinsey.com">McKinsey & Co.</a></li>
-    <li>A promising technology enterprise: <a href="http://google.com">Google</a></li>
-    <li>An OK school: <a href="https://www.chicagobooth.edu/">Chicago Booth</a></li>
-    </ul>
-    </p>
+            <label class="block mt-4 font-bold" for="fee">How much are you willing to pay?</label>
+            <input class="p-2 w-64 border border-gray-900 rounded focus:outline-none 
+            focus:ring-gray-500 focus:border-gray-500" type="number" id="fee" name="fee">
+
+            <button class="block mt-4 text-white bg-blue-900 rounded px-4 py-2">Submit form</button>
+        </form>
+    </div>
 </body>
 </html>
